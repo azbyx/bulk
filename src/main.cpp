@@ -1,14 +1,21 @@
-#include "ModelBulk.h"
+//#include "ModelBulk.h"
 #include "Handler.h"
-#include "ConsolePrinter.h"
-#include "FileLoger.h"
+//#include "ConsolePrinter.h"
+//#include "FileLoger.h"
 
 #include <iostream>
 #include <cstdlib>
 
 
-int main(int argc, char** argv) {
+int main(int, char**) {
+//(int argc, char** argv) {
 
+    std::shared_ptr<Handler> handl = std::make_shared<Handler>();
+
+    while(handl->isEof())
+        handl->readCommand();
+
+    /*
     if(argc != 2) {
         std::cout << "Usage: bulk N \nWhere N is size of block.";
         return 1;
@@ -32,6 +39,6 @@ int main(int argc, char** argv) {
             std::cout << argv[1] << " isn't a positive number." << std::endl;
         }
     }
-
+    */
     return 0;
 }

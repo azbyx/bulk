@@ -1,15 +1,10 @@
-#include "ICommand.h"
+#pragma once
 
-Class CommandBeginBlock : ICommand {}
 
-Class CommandEndBlock : ICommand {}
+class ICommand {};
 
-Class CommandDataRead : ICommand {
-public:
-    CommandDataRead(const std::string& curCommand) : value(curCommand);
+class TagBeginBlock : ICommand {};
 
-    std::string getValue() const { return dataCommand; }
+class TagEndBlock : ICommand {};
 
-private:
-    std::string dataCommand;
-}
+class TagStoreData : ICommand {};
