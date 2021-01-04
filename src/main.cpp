@@ -1,4 +1,4 @@
-//#include "ModelBulk.h"
+#include "ModelBulk.h"
 #include "Handler.h"
 //#include "ConsolePrinter.h"
 //#include "FileLoger.h"
@@ -10,10 +10,10 @@
 int main(int, char**) {
 //(int argc, char** argv) {
 
-    std::shared_ptr<Handler> handl = std::make_shared<Handler>();
+    std::unique_ptr<ModelBulk> bulk = std::make_unique<ModelBulk>(3ULL);
+    std::unique_ptr<Handler> handler = std::make_unique<Handler>(std::move(bulk), std::cin);
 
-    while(handl->isEof())
-        handl->readCommand();
+    handler->loop();
 
     /*
     if(argc != 2) {

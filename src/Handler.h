@@ -6,12 +6,14 @@
 #include <iostream>
 //#include "Command.h"
 
+enum class Comm {BEG, END, STORE, ENDOF};
 
 class Handler {
 public:
-    Handler() = default;
+    Handler(std::shared_ptr<ModelBulk>, std::istream&);
     ~Handler() = default;
 
+    void loop();
     void readCommand();
     bool isEof() { return eof; }
 
@@ -23,16 +25,22 @@ private:
     void doEof();
 
 private:
-    bool eof = true;
-    std::string data;
+    bool eof = false;
+    std::shared_ptr<ModelBulk> curModel;
+    std::istream& input;
 };
 
 
+
+Handler::Handler(std::shared_ptr<ModelBulk> inModel, std::istream& inParam)
+    : curModel(inModel), input(inParam) {}
+
 void Handler::readCommand() {
 
-    std::cin >> data;
-    eof = !std::cin.eof();
-    if(!eof)
+    std::string data;
+    input >> data;
+    eof = input.eof();
+    if(eof)
         doEof();
     else if(data == "{")
         doBeginBlock();
@@ -40,6 +48,12 @@ void Handler::readCommand() {
         doEndBlock();
     else
         doStoreData();
+}
+
+void Handler::loop() {
+
+    while(!isEof())
+        readCommand();
 }
 
 
@@ -54,7 +68,8 @@ void Handler::doEndBlock() {
 
 
 void Handler::doStoreData() {
-    std::cout << data << " CommandStoreData " << std::endl;
+    std::cout << " CommandStoreData " << std::endl;
+    curModel.push_back();
 }
 
 void Handler::doEof() {
