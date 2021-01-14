@@ -1,0 +1,6 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$class_i_model_command.html" title="Interface that allows you to manage the state of the command keeper." alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node2" href="$class_model_bulk.html" title="Class for storing commands and state for processing. Inherits from interfaces for handling its state,..." alt="" coords="187,56,277,83"/>
+<area shape="rect" id="node3" href="$class_i_model_iterator.html" title="Interface for outputting keeped commands and income time of the first command." alt="" coords="15,56,129,83"/>
+<area shape="rect" id="node4" href="$class_observable.html" title="Class interface for notifying about the need to process the command model." alt="" coords="24,107,120,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ModelBulk" name="ModelBulk">
+<area shape="rect" id="node1" title="Class for storing commands and state for processing. Inherits from interfaces for handling its state,..." alt="" coords="167,292,306,516"/>
+<area shape="rect" id="node2" href="$class_observable.html" title="Class interface for notifying about the need to process the command model." alt="" coords="5,71,137,178"/>
+<area shape="rect" id="node3" href="$class_i_model_iterator.html" title="Interface for outputting keeped commands and income time of the first command." alt="" coords="161,64,312,185"/>
+<area shape="rect" id="node4" href="$class_i_model_command.html" title="Interface that allows you to manage the state of the command keeper." alt="" coords="336,5,505,244"/>
+</map>

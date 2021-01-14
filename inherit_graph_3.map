@@ -1,0 +1,5 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$class_i_observer.html" title="Interface provided to the browser of the object being observed." alt="" coords="5,31,91,57"/>
+<area shape="rect" id="node2" href="$class_console_printer.html" title="Class for printing the commands stored in the model to a stream. Here is used Observer pattern." alt="" coords="139,5,256,32"/>
+<area shape="rect" id="node3" href="$class_file_loger.html" title="Class for outputting the commands stored in the model to a file. Here is used Observer pattern." alt="" coords="157,56,238,83"/>
+</map>

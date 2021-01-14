@@ -1,0 +1,4 @@
+<map id="IModelIterator" name="IModelIterator">
+<area shape="rect" id="node1" title="Interface for outputting keeped commands and income time of the first command." alt="" coords="5,5,156,127"/>
+<area shape="rect" id="node2" href="$class_model_bulk.html" title="Class for storing commands and state for processing. Inherits from interfaces for handling its state,..." alt="" coords="11,175,150,399"/>
+</map>

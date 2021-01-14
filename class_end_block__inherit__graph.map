@@ -1,0 +1,5 @@
+<map id="EndBlock" name="EndBlock">
+<area shape="rect" id="node1" title="Class for running command EndBlock &#45; &quot;}&quot;." alt="" coords="17,315,147,407"/>
+<area shape="rect" id="node2" href="$class_base_commands.html" title="base class for creating commands." alt="" coords="5,160,159,267"/>
+<area shape="rect" id="node3" href="$class_i_commands.html" title="Interface for using commands." alt="" coords="14,5,150,112"/>
+</map>

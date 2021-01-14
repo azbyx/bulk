@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bulk: Класс ModelBulk</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bulk
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_model_bulk-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс ModelBulk</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class for storing commands and state for processing. Inherits from interfaces for handling its state, outputting it, and iterating over it.  
+ <a href="class_model_bulk.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_model_bulk_8h_source.html">ModelBulk.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:ModelBulk:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_model_bulk__inherit__graph.png" border="0" usemap="#_model_bulk_inherit__map" alt="Inheritance graph"/></div>
+<map name="_model_bulk_inherit__map" id="_model_bulk_inherit__map">
+<area shape="rect" title="Class for storing commands and state for processing. Inherits from interfaces for handling its state,..." alt="" coords="167,292,306,516"/>
+<area shape="rect" href="class_observable.html" title="Class interface for notifying about the need to process the command model." alt="" coords="5,71,137,178"/>
+<area shape="rect" href="class_i_model_iterator.html" title="Interface for outputting keeped commands and income time of the first command." alt="" coords="161,64,312,185"/>
+<area shape="rect" href="class_i_model_command.html" title="Interface that allows you to manage the state of the command keeper." alt="" coords="336,5,505,244"/>
+</map>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса ModelBulk:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_model_bulk__coll__graph.png" border="0" usemap="#_model_bulk_coll__map" alt="Collaboration graph"/></div>
+<map name="_model_bulk_coll__map" id="_model_bulk_coll__map">
+<area shape="rect" title="Class for storing commands and state for processing. Inherits from interfaces for handling its state,..." alt="" coords="167,292,306,516"/>
+<area shape="rect" href="class_observable.html" title="Class interface for notifying about the need to process the command model." alt="" coords="5,71,137,178"/>
+<area shape="rect" href="class_i_model_iterator.html" title="Interface for outputting keeped commands and income time of the first command." alt="" coords="161,64,312,185"/>
+<area shape="rect" href="class_i_model_command.html" title="Interface that allows you to manage the state of the command keeper." alt="" coords="336,5,505,244"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af8d8921e5d1d7598815207c5d902ee5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#af8d8921e5d1d7598815207c5d902ee5a">ModelBulk</a> (const size_t &amp;)</td></tr>
+<tr class="separator:af8d8921e5d1d7598815207c5d902ee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295d12f2878823cf0064bb0c5c71adf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a295d12f2878823cf0064bb0c5c71adf5">~ModelBulk</a> ()=default</td></tr>
+<tr class="separator:a295d12f2878823cf0064bb0c5c71adf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2243b864b07ecbb61c24126c3f105b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a5e2243b864b07ecbb61c24126c3f105b">cbegin</a> () const override</td></tr>
+<tr class="separator:a5e2243b864b07ecbb61c24126c3f105b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9249c0057c9b9bd1d5fc2eca5c864d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classiterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a9249c0057c9b9bd1d5fc2eca5c864d09">cend</a> () const override</td></tr>
+<tr class="separator:a9249c0057c9b9bd1d5fc2eca5c864d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d629bb28d47b7bc31b40c030c9f55be"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a8d629bb28d47b7bc31b40c030c9f55be">getTime</a> () const override</td></tr>
+<tr class="separator:a8d629bb28d47b7bc31b40c030c9f55be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96839b9eda139f9fd1b5230ec9ed6724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a96839b9eda139f9fd1b5230ec9ed6724">doOut</a> () override</td></tr>
+<tr class="separator:a96839b9eda139f9fd1b5230ec9ed6724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ac62c93d666238f298ee3ecf55210c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#af3ac62c93d666238f298ee3ecf55210c">addCommand</a> (<a class="el" href="class_i_model_command.html#a41fabb65ecd3eb7d4f694f9bf1da3075">SPstring</a> inCommand) override</td></tr>
+<tr class="separator:af3ac62c93d666238f298ee3ecf55210c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af266079628cecbd46f97a4605828306f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#af266079628cecbd46f97a4605828306f">isStaticMode</a> () const override</td></tr>
+<tr class="separator:af266079628cecbd46f97a4605828306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef752ec7e735f3afb7e93e918ccf4fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#abef752ec7e735f3afb7e93e918ccf4fd">isFull</a> () override</td></tr>
+<tr class="separator:abef752ec7e735f3afb7e93e918ccf4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5252ccc375e4d27d1c1fe53347a2e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#ab5252ccc375e4d27d1c1fe53347a2e97">nextLevel</a> () override</td></tr>
+<tr class="separator:ab5252ccc375e4d27d1c1fe53347a2e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37a30e5143cde114dc4fb8f476d4261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#ab37a30e5143cde114dc4fb8f476d4261">previousLevel</a> () override</td></tr>
+<tr class="separator:ab37a30e5143cde114dc4fb8f476d4261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042d84f1af67ec8ad5161a0caef576d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a042d84f1af67ec8ad5161a0caef576d9">setTime</a> () override</td></tr>
+<tr class="separator:a042d84f1af67ec8ad5161a0caef576d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab560a8c37b4de1dc5e709fd980602a80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#ab560a8c37b4de1dc5e709fd980602a80">checkLevel</a> () override</td></tr>
+<tr class="separator:ab560a8c37b4de1dc5e709fd980602a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789c55b969e564161d2397cd2edc95ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a789c55b969e564161d2397cd2edc95ff">isEmpty</a> () const override</td></tr>
+<tr class="separator:a789c55b969e564161d2397cd2edc95ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f175bbc5c699f4fdfe9cd571dc7ff80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a4f175bbc5c699f4fdfe9cd571dc7ff80">doNotify</a> () override</td></tr>
+<tr class="separator:a4f175bbc5c699f4fdfe9cd571dc7ff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9457c3d0f3a3ba1bce8111e07cd9a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#a2b9457c3d0f3a3ba1bce8111e07cd9a6">clearKeeper</a> () override</td></tr>
+<tr class="separator:a2b9457c3d0f3a3ba1bce8111e07cd9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_observable')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_observable.html">Observable</a></td></tr>
+<tr class="memitem:a058acb5a674eba2b96648c66a27440d8 inherit pub_methods_class_observable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a058acb5a674eba2b96648c66a27440d8">~Observable</a> ()=default</td></tr>
+<tr class="separator:a058acb5a674eba2b96648c66a27440d8 inherit pub_methods_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5796efccfdc98e380af254add146bbd inherit pub_methods_class_observable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#ae5796efccfdc98e380af254add146bbd">notify</a> (const <a class="el" href="class_i_model_iterator.html">IModelIterator</a> &amp;)</td></tr>
+<tr class="separator:ae5796efccfdc98e380af254add146bbd inherit pub_methods_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69e8b3c9bc627e4213eb68f3bbb4378 inherit pub_methods_class_observable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#af69e8b3c9bc627e4213eb68f3bbb4378">subscribe</a> (SPIObserver)</td></tr>
+<tr class="separator:af69e8b3c9bc627e4213eb68f3bbb4378 inherit pub_methods_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_model_iterator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_model_iterator')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_i_model_iterator.html">IModelIterator</a></td></tr>
+<tr class="memitem:ab9cd9bc116401fe10624a56f0898ffbd inherit pub_methods_class_i_model_iterator"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_iterator.html#ab9cd9bc116401fe10624a56f0898ffbd">~IModelIterator</a> ()=default</td></tr>
+<tr class="separator:ab9cd9bc116401fe10624a56f0898ffbd inherit pub_methods_class_i_model_iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_model_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_model_command')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_i_model_command.html">IModelCommand</a></td></tr>
+<tr class="memitem:af92237790867adbdc8f6999df550b8b9 inherit pub_methods_class_i_model_command"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#af92237790867adbdc8f6999df550b8b9">~IModelCommand</a> ()=default</td></tr>
+<tr class="separator:af92237790867adbdc8f6999df550b8b9 inherit pub_methods_class_i_model_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:aa6a28bfca947977b0a1f96552a5e33e6"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_bulk.html#aa6a28bfca947977b0a1f96552a5e33e6">iterator</a></td></tr>
+<tr class="separator:aa6a28bfca947977b0a1f96552a5e33e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_types_class_i_model_command"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_i_model_command')"><img src="closed.png" alt="-"/>&#160;Открытые типы унаследованные от <a class="el" href="class_i_model_command.html">IModelCommand</a></td></tr>
+<tr class="memitem:a41fabb65ecd3eb7d4f694f9bf1da3075 inherit pub_types_class_i_model_command"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a41fabb65ecd3eb7d4f694f9bf1da3075">SPstring</a> = std::shared_ptr&lt; std::string &gt;</td></tr>
+<tr class="separator:a41fabb65ecd3eb7d4f694f9bf1da3075 inherit pub_types_class_i_model_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_observable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_observable')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_observable.html">Observable</a></td></tr>
+<tr class="memitem:ab84fdedb2daa2435211bb401d9e00820 inherit pro_attribs_class_observable"><td class="memItemLeft" align="right" valign="top">std::list&lt; SPIObserver &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#ab84fdedb2daa2435211bb401d9e00820">subscribers</a></td></tr>
+<tr class="separator:ab84fdedb2daa2435211bb401d9e00820 inherit pro_attribs_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Class for storing commands and state for processing. Inherits from interfaces for handling its state, outputting it, and iterating over it. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="af8d8921e5d1d7598815207c5d902ee5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d8921e5d1d7598815207c5d902ee5a">&#9670;&nbsp;</a></span>ModelBulk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelBulk::ModelBulk </td>
+          <td>(</td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>inNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a295d12f2878823cf0064bb0c5c71adf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295d12f2878823cf0064bb0c5c71adf5">&#9670;&nbsp;</a></span>~ModelBulk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelBulk::~ModelBulk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="af3ac62c93d666238f298ee3ecf55210c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ac62c93d666238f298ee3ecf55210c">&#9670;&nbsp;</a></span>addCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::addCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_model_command.html#a41fabb65ecd3eb7d4f694f9bf1da3075">SPstring</a>&#160;</td>
+          <td class="paramname"><em>inCommand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a29494b2414ebdfe570e3305cb3e9e02e">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="a5e2243b864b07ecbb61c24126c3f105b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2243b864b07ecbb61c24126c3f105b">&#9670;&nbsp;</a></span>cbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classiterator.html">iterator</a> ModelBulk::cbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_iterator.html#a8ab5f13624fa54ec15c204ced15548f2">IModelIterator</a>.</p>
+
+</div>
+</div>
+<a id="a9249c0057c9b9bd1d5fc2eca5c864d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9249c0057c9b9bd1d5fc2eca5c864d09">&#9670;&nbsp;</a></span>cend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classiterator.html">iterator</a> ModelBulk::cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_iterator.html#a832437fa2e943f6a9e1805d3f7458958">IModelIterator</a>.</p>
+
+</div>
+</div>
+<a id="ab560a8c37b4de1dc5e709fd980602a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab560a8c37b4de1dc5e709fd980602a80">&#9670;&nbsp;</a></span>checkLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::checkLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a23d440ce8daf3bbf73a3d73f4d9b207e">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="a2b9457c3d0f3a3ba1bce8111e07cd9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b9457c3d0f3a3ba1bce8111e07cd9a6">&#9670;&nbsp;</a></span>clearKeeper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::clearKeeper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a58e6a0b4fe342c32e96f92dc3734c79e">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="a4f175bbc5c699f4fdfe9cd571dc7ff80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f175bbc5c699f4fdfe9cd571dc7ff80">&#9670;&nbsp;</a></span>doNotify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::doNotify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a2b91e94e800c6a2508503241c149fe8a">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="a96839b9eda139f9fd1b5230ec9ed6724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96839b9eda139f9fd1b5230ec9ed6724">&#9670;&nbsp;</a></span>doOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::doOut </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#acd630bf4f4ae934022c9fd02f522f8de">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="a8d629bb28d47b7bc31b40c030c9f55be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d629bb28d47b7bc31b40c030c9f55be">&#9670;&nbsp;</a></span>getTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModelBulk::getTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_iterator.html#addf4090d705b6af68ed0b8c8f6f0a982">IModelIterator</a>.</p>
+
+</div>
+</div>
+<a id="a789c55b969e564161d2397cd2edc95ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789c55b969e564161d2397cd2edc95ff">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelBulk::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#af82d7c4b421a0037cddfec44305514af">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="abef752ec7e735f3afb7e93e918ccf4fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef752ec7e735f3afb7e93e918ccf4fd">&#9670;&nbsp;</a></span>isFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelBulk::isFull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a1bb2af3112435f1bde41f026736e1e1b">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="af266079628cecbd46f97a4605828306f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af266079628cecbd46f97a4605828306f">&#9670;&nbsp;</a></span>isStaticMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelBulk::isStaticMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a9707b173100aaed8f87aedade88c683d">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="ab5252ccc375e4d27d1c1fe53347a2e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5252ccc375e4d27d1c1fe53347a2e97">&#9670;&nbsp;</a></span>nextLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::nextLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a8c29fa9f3ae9301f9f739f8cdc419b80">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="ab37a30e5143cde114dc4fb8f476d4261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37a30e5143cde114dc4fb8f476d4261">&#9670;&nbsp;</a></span>previousLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::previousLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#a47caaecafe1afc395267e22e3e0e0c77">IModelCommand</a>.</p>
+
+</div>
+</div>
+<a id="a042d84f1af67ec8ad5161a0caef576d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042d84f1af67ec8ad5161a0caef576d9">&#9670;&nbsp;</a></span>setTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelBulk::setTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_i_model_command.html#aa8d71a9392ebcd58af4c89977691445e">IModelCommand</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="aa6a28bfca947977b0a1f96552a5e33e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a28bfca947977b0a1f96552a5e33e6">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend ModelBulk::iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>headers/<a class="el" href="_model_bulk_8h_source.html">ModelBulk.h</a></li>
+<li>src/<a class="el" href="_model_bulk_8cpp.html">ModelBulk.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

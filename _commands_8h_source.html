@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bulk: Исходный файл headers/Commands.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bulk
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Commands.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_commands_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_i_commands_8h.html">ICommands.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_i_model_command_8h.html">IModelCommand.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665">    6</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665">CMD</a> {<a class="code" href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665acdf5cd8617366687b19657108513b589">BEG</a>, <a class="code" href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665ab1a326c06d88bf042f73d70f50197905">END</a>, <a class="code" href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665a2c9b682412689d6723e3b31653b5774c">EF</a>, <a class="code" href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665a9eeb52badb613229884838847294b90d">ADD</a>};</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_base_commands.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_base_commands.html">BaseCommands</a> : <span class="keyword">public</span> <a class="code" href="class_i_commands.html">ICommands</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_base_commands.html#a48ef6a4ac3cc1d958a58f7bea810e72d">   15</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_base_commands.html#a48ef6a4ac3cc1d958a58f7bea810e72d">SPString</a> = std::shared_ptr&lt;std::string&gt;;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">   16</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">SPModel</a> = std::shared_ptr&lt;IModelCommand&gt;;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_base_commands.html#a4eee14b338421f0f36c8f186bba33ea6">   18</a></span>&#160;    <a class="code" href="class_base_commands.html#a4eee14b338421f0f36c8f186bba33ea6">BaseCommands</a>(<a class="code" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">SPModel</a> inModel) : <a class="code" href="class_base_commands.html#a0b3ad82373dc9c0fabcd2963f7bae85b">curModel</a>(inModel) {}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_base_commands.html#ae7cf47764ca5a51e831c526b9c55a32b">   20</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_base_commands.html#ae7cf47764ca5a51e831c526b9c55a32b">doCommand</a>(<a class="code" href="class_base_commands.html#a48ef6a4ac3cc1d958a58f7bea810e72d">SPString</a>)<span class="keyword">  override </span>{};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_base_commands.html#aa3cc01612a84e493713646936871e5f4">   22</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_base_commands.html#aa3cc01612a84e493713646936871e5f4">doCommand</a>()<span class="keyword">  override </span>{};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">SPModel</a> <a class="code" href="class_base_commands.html#a0b3ad82373dc9c0fabcd2963f7bae85b">curModel</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_begin_block.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_begin_block.html">BeginBlock</a> : <span class="keyword">public</span> <a class="code" href="class_base_commands.html">BaseCommands</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_begin_block.html#a3bca00c05cfbf24f18ab58a3381fade9">   34</a></span>&#160;    <a class="code" href="class_begin_block.html#a3bca00c05cfbf24f18ab58a3381fade9">BeginBlock</a>(<a class="code" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">SPModel</a> inModel) : <a class="code" href="class_base_commands.html">BaseCommands</a>(inModel) {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_begin_block.html#ac7ad936ce316a7697cb3eb676b2a66e1">doCommand</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_end_block.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_end_block.html">EndBlock</a> : <span class="keyword">public</span> <a class="code" href="class_base_commands.html">BaseCommands</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_end_block.html#a74a50d25aa681b0587c5ac24871cc107">   46</a></span>&#160;    <a class="code" href="class_end_block.html#a74a50d25aa681b0587c5ac24871cc107">EndBlock</a>(<a class="code" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">SPModel</a> inModel) : <a class="code" href="class_base_commands.html">BaseCommands</a>(inModel) {}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_end_block.html#a4561027a4a6933dbf0e0b1a23a00b4c1">doCommand</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_eof.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_eof.html">Eof</a> : <span class="keyword">public</span> <a class="code" href="class_base_commands.html">BaseCommands</a> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_eof.html#a473b2a375d487eede6c4b3c340a31785">   58</a></span>&#160;    <a class="code" href="class_eof.html#a473b2a375d487eede6c4b3c340a31785">Eof</a>(<a class="code" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">SPModel</a> inModel) : <a class="code" href="class_base_commands.html">BaseCommands</a>(inModel) {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_eof.html#ae4e68b11b8be31540ed49bbb9978b69c">doCommand</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_store_data.html">   67</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_store_data.html">StoreData</a> : <span class="keyword">public</span> <a class="code" href="class_base_commands.html">BaseCommands</a> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_store_data.html#aaef0af4cf02299d45589c253d581516f">   70</a></span>&#160;    <a class="code" href="class_store_data.html#aaef0af4cf02299d45589c253d581516f">StoreData</a>(<a class="code" href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">SPModel</a> inModel) : <a class="code" href="class_base_commands.html">BaseCommands</a>(inModel) {}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_base_commands.html#aa3cc01612a84e493713646936871e5f4">doCommand</a>(<a class="code" href="class_base_commands.html#a48ef6a4ac3cc1d958a58f7bea810e72d">SPString</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_end_block_html_a74a50d25aa681b0587c5ac24871cc107"><div class="ttname"><a href="class_end_block.html#a74a50d25aa681b0587c5ac24871cc107">EndBlock::EndBlock</a></div><div class="ttdeci">EndBlock(SPModel inModel)</div><div class="ttdef"><b>Definition:</b> Commands.h:46</div></div>
+<div class="ttc" id="aclass_end_block_html"><div class="ttname"><a href="class_end_block.html">EndBlock</a></div><div class="ttdoc">Class for running command EndBlock - &quot;}&quot;.</div><div class="ttdef"><b>Definition:</b> Commands.h:43</div></div>
+<div class="ttc" id="a_i_model_command_8h_html"><div class="ttname"><a href="_i_model_command_8h.html">IModelCommand.h</a></div></div>
+<div class="ttc" id="aclass_eof_html_ae4e68b11b8be31540ed49bbb9978b69c"><div class="ttname"><a href="class_eof.html#ae4e68b11b8be31540ed49bbb9978b69c">Eof::doCommand</a></div><div class="ttdeci">void doCommand() override</div><div class="ttdef"><b>Definition:</b> Commands.cpp:23</div></div>
+<div class="ttc" id="a_commands_8h_html_a04887de32e1f60f8dc157312b8f27665acdf5cd8617366687b19657108513b589"><div class="ttname"><a href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665acdf5cd8617366687b19657108513b589">CMD::BEG</a></div><div class="ttdeci">@ BEG</div></div>
+<div class="ttc" id="aclass_eof_html_a473b2a375d487eede6c4b3c340a31785"><div class="ttname"><a href="class_eof.html#a473b2a375d487eede6c4b3c340a31785">Eof::Eof</a></div><div class="ttdeci">Eof(SPModel inModel)</div><div class="ttdef"><b>Definition:</b> Commands.h:58</div></div>
+<div class="ttc" id="aclass_store_data_html_aaef0af4cf02299d45589c253d581516f"><div class="ttname"><a href="class_store_data.html#aaef0af4cf02299d45589c253d581516f">StoreData::StoreData</a></div><div class="ttdeci">StoreData(SPModel inModel)</div><div class="ttdef"><b>Definition:</b> Commands.h:70</div></div>
+<div class="ttc" id="aclass_store_data_html"><div class="ttname"><a href="class_store_data.html">StoreData</a></div><div class="ttdoc">Class for running command StoreData.</div><div class="ttdef"><b>Definition:</b> Commands.h:67</div></div>
+<div class="ttc" id="aclass_base_commands_html_a0b3ad82373dc9c0fabcd2963f7bae85b"><div class="ttname"><a href="class_base_commands.html#a0b3ad82373dc9c0fabcd2963f7bae85b">BaseCommands::curModel</a></div><div class="ttdeci">SPModel curModel</div><div class="ttdef"><b>Definition:</b> Commands.h:22</div></div>
+<div class="ttc" id="aclass_end_block_html_a4561027a4a6933dbf0e0b1a23a00b4c1"><div class="ttname"><a href="class_end_block.html#a4561027a4a6933dbf0e0b1a23a00b4c1">EndBlock::doCommand</a></div><div class="ttdeci">void doCommand() override</div><div class="ttdef"><b>Definition:</b> Commands.cpp:15</div></div>
+<div class="ttc" id="aclass_eof_html"><div class="ttname"><a href="class_eof.html">Eof</a></div><div class="ttdoc">Class for running command EOF.</div><div class="ttdef"><b>Definition:</b> Commands.h:55</div></div>
+<div class="ttc" id="a_i_commands_8h_html"><div class="ttname"><a href="_i_commands_8h.html">ICommands.h</a></div></div>
+<div class="ttc" id="aclass_base_commands_html_ae7cf47764ca5a51e831c526b9c55a32b"><div class="ttname"><a href="class_base_commands.html#ae7cf47764ca5a51e831c526b9c55a32b">BaseCommands::doCommand</a></div><div class="ttdeci">virtual void doCommand(SPString) override</div><div class="ttdef"><b>Definition:</b> Commands.h:20</div></div>
+<div class="ttc" id="aclass_base_commands_html"><div class="ttname"><a href="class_base_commands.html">BaseCommands</a></div><div class="ttdoc">base class for creating commands.</div><div class="ttdef"><b>Definition:</b> Commands.h:12</div></div>
+<div class="ttc" id="a_commands_8h_html_a04887de32e1f60f8dc157312b8f27665a2c9b682412689d6723e3b31653b5774c"><div class="ttname"><a href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665a2c9b682412689d6723e3b31653b5774c">CMD::EF</a></div><div class="ttdeci">@ EF</div></div>
+<div class="ttc" id="aclass_base_commands_html_aa3cc01612a84e493713646936871e5f4"><div class="ttname"><a href="class_base_commands.html#aa3cc01612a84e493713646936871e5f4">BaseCommands::doCommand</a></div><div class="ttdeci">virtual void doCommand() override</div><div class="ttdef"><b>Definition:</b> Commands.h:22</div></div>
+<div class="ttc" id="aclass_begin_block_html_a3bca00c05cfbf24f18ab58a3381fade9"><div class="ttname"><a href="class_begin_block.html#a3bca00c05cfbf24f18ab58a3381fade9">BeginBlock::BeginBlock</a></div><div class="ttdeci">BeginBlock(SPModel inModel)</div><div class="ttdef"><b>Definition:</b> Commands.h:34</div></div>
+<div class="ttc" id="aclass_base_commands_html_a4eee14b338421f0f36c8f186bba33ea6"><div class="ttname"><a href="class_base_commands.html#a4eee14b338421f0f36c8f186bba33ea6">BaseCommands::BaseCommands</a></div><div class="ttdeci">BaseCommands(SPModel inModel)</div><div class="ttdef"><b>Definition:</b> Commands.h:18</div></div>
+<div class="ttc" id="aclass_base_commands_html_ae653f690e80c3edcb97fd87acdcc1f88"><div class="ttname"><a href="class_base_commands.html#ae653f690e80c3edcb97fd87acdcc1f88">BaseCommands::SPModel</a></div><div class="ttdeci">std::shared_ptr&lt; IModelCommand &gt; SPModel</div><div class="ttdef"><b>Definition:</b> Commands.h:16</div></div>
+<div class="ttc" id="a_commands_8h_html_a04887de32e1f60f8dc157312b8f27665ab1a326c06d88bf042f73d70f50197905"><div class="ttname"><a href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665ab1a326c06d88bf042f73d70f50197905">CMD::END</a></div><div class="ttdeci">@ END</div></div>
+<div class="ttc" id="a_commands_8h_html_a04887de32e1f60f8dc157312b8f27665a9eeb52badb613229884838847294b90d"><div class="ttname"><a href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665a9eeb52badb613229884838847294b90d">CMD::ADD</a></div><div class="ttdeci">@ ADD</div></div>
+<div class="ttc" id="aclass_i_commands_html"><div class="ttname"><a href="class_i_commands.html">ICommands</a></div><div class="ttdoc">Interface for using commands.</div><div class="ttdef"><b>Definition:</b> ICommands.h:9</div></div>
+<div class="ttc" id="aclass_begin_block_html_ac7ad936ce316a7697cb3eb676b2a66e1"><div class="ttname"><a href="class_begin_block.html#ac7ad936ce316a7697cb3eb676b2a66e1">BeginBlock::doCommand</a></div><div class="ttdeci">void doCommand() override</div><div class="ttdef"><b>Definition:</b> Commands.cpp:4</div></div>
+<div class="ttc" id="aclass_begin_block_html"><div class="ttname"><a href="class_begin_block.html">BeginBlock</a></div><div class="ttdoc">Class for running command BeginBlock - &quot;{&quot;.</div><div class="ttdef"><b>Definition:</b> Commands.h:31</div></div>
+<div class="ttc" id="a_commands_8h_html_a04887de32e1f60f8dc157312b8f27665"><div class="ttname"><a href="_commands_8h.html#a04887de32e1f60f8dc157312b8f27665">CMD</a></div><div class="ttdeci">CMD</div><div class="ttdef"><b>Definition:</b> Commands.h:6</div></div>
+<div class="ttc" id="aclass_base_commands_html_a48ef6a4ac3cc1d958a58f7bea810e72d"><div class="ttname"><a href="class_base_commands.html#a48ef6a4ac3cc1d958a58f7bea810e72d">BaseCommands::SPString</a></div><div class="ttdeci">std::shared_ptr&lt; std::string &gt; SPString</div><div class="ttdef"><b>Definition:</b> Commands.h:15</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

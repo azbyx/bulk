@@ -1,0 +1,4 @@
+<map id="ConsolePrinter" name="ConsolePrinter">
+<area shape="rect" id="node1" title="Class for printing the commands stored in the model to a stream. Here is used Observer pattern." alt="" coords="7,145,125,223"/>
+<area shape="rect" id="node2" href="$class_i_observer.html" title="Interface provided to the browser of the object being observed." alt="" coords="5,5,127,97"/>
+</map>

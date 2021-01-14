@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bulk: Класс IModelCommand</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bulk
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_i_model_command-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс IModelCommand<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interface that allows you to manage the state of the command keeper.  
+ <a href="class_i_model_command.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_i_model_command_8h_source.html">IModelCommand.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:IModelCommand:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_i_model_command__inherit__graph.png" border="0" usemap="#_i_model_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="_i_model_command_inherit__map" id="_i_model_command_inherit__map">
+<area shape="rect" title="Interface that allows you to manage the state of the command keeper." alt="" coords="5,5,175,244"/>
+<area shape="rect" href="class_model_bulk.html" title="Class for storing commands and state for processing. Inherits from interfaces for handling its state,..." alt="" coords="21,292,159,516"/>
+</map>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса IModelCommand:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_i_model_command__coll__graph.png" border="0" usemap="#_i_model_command_coll__map" alt="Collaboration graph"/></div>
+<map name="_i_model_command_coll__map" id="_i_model_command_coll__map">
+<area shape="rect" title="Interface that allows you to manage the state of the command keeper." alt="" coords="5,5,175,244"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a41fabb65ecd3eb7d4f694f9bf1da3075"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a41fabb65ecd3eb7d4f694f9bf1da3075">SPstring</a> = std::shared_ptr&lt; std::string &gt;</td></tr>
+<tr class="separator:a41fabb65ecd3eb7d4f694f9bf1da3075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af92237790867adbdc8f6999df550b8b9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#af92237790867adbdc8f6999df550b8b9">~IModelCommand</a> ()=default</td></tr>
+<tr class="separator:af92237790867adbdc8f6999df550b8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd630bf4f4ae934022c9fd02f522f8de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#acd630bf4f4ae934022c9fd02f522f8de">doOut</a> ()=0</td></tr>
+<tr class="separator:acd630bf4f4ae934022c9fd02f522f8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29494b2414ebdfe570e3305cb3e9e02e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a29494b2414ebdfe570e3305cb3e9e02e">addCommand</a> (<a class="el" href="class_i_model_command.html#a41fabb65ecd3eb7d4f694f9bf1da3075">SPstring</a> inCommand)=0</td></tr>
+<tr class="separator:a29494b2414ebdfe570e3305cb3e9e02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9707b173100aaed8f87aedade88c683d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a9707b173100aaed8f87aedade88c683d">isStaticMode</a> () const =0</td></tr>
+<tr class="separator:a9707b173100aaed8f87aedade88c683d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb2af3112435f1bde41f026736e1e1b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a1bb2af3112435f1bde41f026736e1e1b">isFull</a> ()=0</td></tr>
+<tr class="separator:a1bb2af3112435f1bde41f026736e1e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82d7c4b421a0037cddfec44305514af"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#af82d7c4b421a0037cddfec44305514af">isEmpty</a> () const =0</td></tr>
+<tr class="separator:af82d7c4b421a0037cddfec44305514af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c29fa9f3ae9301f9f739f8cdc419b80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a8c29fa9f3ae9301f9f739f8cdc419b80">nextLevel</a> ()=0</td></tr>
+<tr class="separator:a8c29fa9f3ae9301f9f739f8cdc419b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47caaecafe1afc395267e22e3e0e0c77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a47caaecafe1afc395267e22e3e0e0c77">previousLevel</a> ()=0</td></tr>
+<tr class="separator:a47caaecafe1afc395267e22e3e0e0c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d440ce8daf3bbf73a3d73f4d9b207e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a23d440ce8daf3bbf73a3d73f4d9b207e">checkLevel</a> ()=0</td></tr>
+<tr class="separator:a23d440ce8daf3bbf73a3d73f4d9b207e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d71a9392ebcd58af4c89977691445e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#aa8d71a9392ebcd58af4c89977691445e">setTime</a> ()=0</td></tr>
+<tr class="separator:aa8d71a9392ebcd58af4c89977691445e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b91e94e800c6a2508503241c149fe8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a2b91e94e800c6a2508503241c149fe8a">doNotify</a> ()=0</td></tr>
+<tr class="separator:a2b91e94e800c6a2508503241c149fe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e6a0b4fe342c32e96f92dc3734c79e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model_command.html#a58e6a0b4fe342c32e96f92dc3734c79e">clearKeeper</a> ()=0</td></tr>
+<tr class="separator:a58e6a0b4fe342c32e96f92dc3734c79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Interface that allows you to manage the state of the command keeper. </p>
+</div><h2 class="groupheader">Определения типов</h2>
+<a id="a41fabb65ecd3eb7d4f694f9bf1da3075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41fabb65ecd3eb7d4f694f9bf1da3075">&#9670;&nbsp;</a></span>SPstring</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_i_model_command.html#a41fabb65ecd3eb7d4f694f9bf1da3075">IModelCommand::SPstring</a> =  std::shared_ptr&lt;std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="af92237790867adbdc8f6999df550b8b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92237790867adbdc8f6999df550b8b9">&#9670;&nbsp;</a></span>~IModelCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IModelCommand::~IModelCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a29494b2414ebdfe570e3305cb3e9e02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29494b2414ebdfe570e3305cb3e9e02e">&#9670;&nbsp;</a></span>addCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::addCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_model_command.html#a41fabb65ecd3eb7d4f694f9bf1da3075">SPstring</a>&#160;</td>
+          <td class="paramname"><em>inCommand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#af3ac62c93d666238f298ee3ecf55210c">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="a23d440ce8daf3bbf73a3d73f4d9b207e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d440ce8daf3bbf73a3d73f4d9b207e">&#9670;&nbsp;</a></span>checkLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::checkLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#ab560a8c37b4de1dc5e709fd980602a80">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="a58e6a0b4fe342c32e96f92dc3734c79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e6a0b4fe342c32e96f92dc3734c79e">&#9670;&nbsp;</a></span>clearKeeper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::clearKeeper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#a2b9457c3d0f3a3ba1bce8111e07cd9a6">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="a2b91e94e800c6a2508503241c149fe8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b91e94e800c6a2508503241c149fe8a">&#9670;&nbsp;</a></span>doNotify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::doNotify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#a4f175bbc5c699f4fdfe9cd571dc7ff80">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="acd630bf4f4ae934022c9fd02f522f8de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd630bf4f4ae934022c9fd02f522f8de">&#9670;&nbsp;</a></span>doOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::doOut </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#a96839b9eda139f9fd1b5230ec9ed6724">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="af82d7c4b421a0037cddfec44305514af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82d7c4b421a0037cddfec44305514af">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IModelCommand::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#a789c55b969e564161d2397cd2edc95ff">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="a1bb2af3112435f1bde41f026736e1e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb2af3112435f1bde41f026736e1e1b">&#9670;&nbsp;</a></span>isFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IModelCommand::isFull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#abef752ec7e735f3afb7e93e918ccf4fd">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="a9707b173100aaed8f87aedade88c683d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9707b173100aaed8f87aedade88c683d">&#9670;&nbsp;</a></span>isStaticMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IModelCommand::isStaticMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#af266079628cecbd46f97a4605828306f">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="a8c29fa9f3ae9301f9f739f8cdc419b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c29fa9f3ae9301f9f739f8cdc419b80">&#9670;&nbsp;</a></span>nextLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::nextLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#ab5252ccc375e4d27d1c1fe53347a2e97">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="a47caaecafe1afc395267e22e3e0e0c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47caaecafe1afc395267e22e3e0e0c77">&#9670;&nbsp;</a></span>previousLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::previousLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#ab37a30e5143cde114dc4fb8f476d4261">ModelBulk</a>.</p>
+
+</div>
+</div>
+<a id="aa8d71a9392ebcd58af4c89977691445e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d71a9392ebcd58af4c89977691445e">&#9670;&nbsp;</a></span>setTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IModelCommand::setTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_model_bulk.html#a042d84f1af67ec8ad5161a0caef576d9">ModelBulk</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>interfaces/<a class="el" href="_i_model_command_8h_source.html">IModelCommand.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
