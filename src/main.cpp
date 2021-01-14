@@ -35,6 +35,7 @@ int main(int argc, char** argv) {
         else {
             std::cout << argv[1] << " isn't a positive number." << std::endl;
         }
+
     }
 
     return 0;
