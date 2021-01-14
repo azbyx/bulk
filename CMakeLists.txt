@@ -12,7 +12,7 @@ endif()
 project(${NAME_EXECUTABLE} VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER}  LANGUAGES CXX)
 
 #set(Boost_USE_STATIC_LIBS OFF)
-#set(Boost_USE_DEBUG_RUNTIME OFF)
+set(Boost_USE_DEBUG_RUNTIME OFF)
 #set(Boost_DEBUG ON)
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)

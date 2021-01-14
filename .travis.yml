@@ -9,6 +9,7 @@ addons:
   - doxygen
 install:
   - sudo apt-get install -y doxygen graphviz
+  - sudo apt-get install libboost-test-dev -y
 script:
  - cmake .
  - cmake --build .

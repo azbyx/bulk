@@ -1,6 +1,6 @@
 # Домашнее задание 06
 
-[![Build Status](https://travis-ci.org/azbyx/bulk.svg?branch=master)](https://travis-ci.org/azbyx/bulk)
+[![Build Status](https://travis-ci.com/azbyx/bulk.svg?branch=master&status=created)](https://travis-ci.com/azbyx/bulk)
 
 ## Условие задания
 
