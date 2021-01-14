@@ -1,21 +1,25 @@
-#include "ModelBulk.h"
-#include "Handler.h"
-//#include "ConsolePrinter.h"
-//#include "FileLoger.h"
+/**
+    \file
+    \mainpage Homework 6 of the course "C ++ Developer. Professional" LLC "Otus Online Education"
+	\brief Homework 6 of the course "C ++ Developer. Professional" LLC "Otus Online Education"
+	\author Bulanov Sergey
+	\version 0.1.0
+	\date January 2020
+	\warning There was done for educational purposes.
 
-#include <iostream>
-#include <cstdlib>
+*The purpose of the work is to use design and architectural patterns for building applications
+*/
 
+#include "MakeHandler.h"
 
-int main(int, char**) {
-//(int argc, char** argv) {
+/**
+    \brief Main function
 
-    std::unique_ptr<ModelBulk> bulk = std::make_unique<ModelBulk>(3ULL);
-    std::unique_ptr<Handler> handler = std::make_unique<Handler>(std::move(bulk), std::cin);
+    \param argc Number of in arguments
+    \param argv Pointer to list of char* arguments
+*/
+int main(int argc, char** argv) {
 
-    handler->loop();
-
-    /*
     if(argc != 2) {
         std::cout << "Usage: bulk N \nWhere N is size of block.";
         return 1;
@@ -25,20 +29,13 @@ int main(int, char**) {
         int commandsNumber = atoll(argv[1]);
 
         if(commandsNumber > 0) {
-
-            auto commandHandler = std::make_unique<IHandler>(commandsNumber, std::cin);
-            auto fileLoger      = FileLoger();
-            auto consolePrinter = ConsolePrinter();
-
-            commandHandler->subscribe(&consolePrinter);
-            commandHandler->subscribe(&fileLoger);
-
-            commandHandler->process();
+            auto commandsHandler = MakeHandler()(commandsNumber);
+            commandsHandler->loop();
         }
         else {
             std::cout << argv[1] << " isn't a positive number." << std::endl;
         }
     }
-    */
+
     return 0;
 }
