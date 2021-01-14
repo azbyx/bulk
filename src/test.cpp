@@ -55,7 +55,7 @@ bool bulkTest(size_t sizeBulk, const std::string& commands, const std::string& e
 
 
 BOOST_AUTO_TEST_SUITE(bulk_test)
-/*
+
     BOOST_AUTO_TEST_CASE(TreeSizeBulk) {
 
         std::string commands = "cmd1 cmd2 cmd3\n";
@@ -98,5 +98,5 @@ BOOST_AUTO_TEST_SUITE(bulk_test)
         BOOST_REQUIRE_THROW(bulkTest(1, commands, expected), std::logic_error);
 
     }
-*/
+
 }
