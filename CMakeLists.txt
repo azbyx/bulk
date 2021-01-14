@@ -17,6 +17,8 @@ set(Boost_USE_DEBUG_RUNTIME OFF)
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
+#message("-- " ${Boost_LIBRARIES})
+
 add_executable(${NAME_EXECUTABLE} ${SRC_PATH}main.cpp)
 
 set(LIBRARIES commands printer factory logger handler model observ)
@@ -54,7 +56,7 @@ set_target_properties(${NAME_TEST} PROPERTIES
     INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 )
 
-target_link_libraries(${NAME_TEST} ${Boost_LIBRARIES} ${LIBRARIES})
+target_link_libraries(${NAME_TEST} ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY} ${LIBRARIES})
 
 target_include_directories(${NAME_TEST} PRIVATE ${PATHES})
 
@@ -80,4 +82,4 @@ include(CPack)
 
 enable_testing()
 
-add_test(${NAME_TEST} ${NAME_TEST})
+add_test(NAME ${NAME_TEST} COMMAND ${NAME_TEST})
